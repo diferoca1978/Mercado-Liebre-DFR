@@ -1,0 +1,293 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  background-color: #EAC926;
+  padding: 10px;
+}
+.top-header {
+  display: block ;
+  text-align: center;
+}
+.logo {
+  height: 90px;
+}
+.search {
+  position: relative;
+}
+.search input {
+  border-radius: 5px;
+  border: none;
+  height: 35px;
+  width: 100%;
+}
+.search i{
+  position: absolute;
+  right: 15px;
+  bottom: 8px;
+  color: #707070;
+  font-size: 16px;
+}
+header h3 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #000000;
+  padding: 0 5px;
+}
+.burger-menu {
+  background-color: #03264C;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  max-width: 40px;
+  padding: 5px;
+  border-radius: 8%;
+  margin: 0 auto;
+}
+.banner{
+  width: 100%;
+}
+
+/* ---------------------
+  Main register form
+  ----------------------*/
+
+#register-form {
+  background-color: #ebebeb;
+  box-sizing: border-box; 
+}
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+.text-field input{
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  width: 300px;
+  height: 25px;
+}
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo input, .photo h3 {
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+.born-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+}
+.born-date input, .born-date h3{
+  margin-bottom: 5px;
+}
+.user-profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.user-profile h3 {
+  margin-bottom: 5px;
+}
+.option-container {
+  display: flex;
+}
+.seller, .buyer {
+  margin: 0 5px;
+}
+.interest h3 {
+  margin-bottom: 5px;
+}
+.interest div{
+  margin-bottom: 10px;
+}
+.buttons {
+  padding-bottom: 15px;
+}
+.submit {
+  background-color: #0022AA;
+  color: #ffffff;
+  border: none;
+  width: 80px;
+  height: 25px;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+.reset {
+  background-color: #0022AA;
+  color: #ffffff;
+  border: none;
+  width: 80px;
+  height: 25px;
+  border-radius: 15px;
+  transition: all 0.3S;
+}
+.submit:hover {
+  background-color: #0d9bdd;
+}
+.reset:hover {
+  background-color: #ff0000;
+}
+
+/*main login form*/
+
+#login-form {
+  background-color: #ebebeb;
+  box-sizing: border-box;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+.login div {
+  margin: 10px 0;
+}
+.login input {
+  width: 350px;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+} 
+.login a button{
+  width: 350px;
+  height: 30px;
+  background-color:#0d9bdd;
+  font-size: 18px;
+  color: #ffffff;
+  border: 1px solid #d3d6e4;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.login a:hover button {
+  background-color: #0022AA;
+  color: #EAC926;
+}
+
+/*------------------
+       footer
+-------------------*/
+
+.footer-container {
+  display: block;
+  text-align: center;
+  border-top: solid 1px #c2c0c0;
+}
+.copyright {
+font-weight: 500;
+font-size: 12px;
+font-weight: 400;
+}
+.footer-container .pay, .footer-container .delivery, .footer-container .security {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.pay h3, .delivery h3, .security h3 {
+  font-size: 16px;
+}
+.pay h4, .delivery h4, .security h4 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.icon-color i{
+  color: #1259C3;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+
+@media(min-width: 361px) {
+  .top-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo {
+    width: 50%;
+  }
+  .search {
+    width: 50%;
+  }
+  header nav {
+    display: none;
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+}
+@media(min-width: 769px) {
+  body {
+    background-color: #ebebeb;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo, .search {
+    width: 30%;
+  }
+  .burger-menu {
+    display: none;
+  }
+  main section article {
+    width: 22%;
+  }
+  .description {
+    display: none;
+  }
+  article:hover .description {
+    display: block;
+  }
+  article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  article:hover i {
+    transform: rotate(-90deg);
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .icon-color:hover i {
+    color: #EAC926;
+  }
+}
