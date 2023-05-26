@@ -9,7 +9,7 @@ body {
 }
 
 /*-----------------------------------
-              HEADER
+--------------HEADER-----------------
 -------------------------------------*/
 
 header {
@@ -20,8 +20,8 @@ header {
   display: block ;
   text-align: center;
 }
-.logo {
-  height: 90px;
+.top-header a img {
+  width: 100%;
 }
 .search {
   position: relative;
@@ -74,7 +74,7 @@ header nav ul li a {
 }
 
 /*-----------------------------------
-              MAIN
+----------------MAIN-----------------
 -------------------------------------*/
 
 main {
@@ -134,9 +134,9 @@ main section h2 {
   transition: all 0.7s;
 }
 
-/* ---------------------
-  Main register form
-  ----------------------*/
+/*--------------------
+  -Main register form-
+  --------------------*/
 
   #register-form {
     background-color: #ebebeb;
@@ -225,9 +225,9 @@ main section h2 {
     background-color: #ff0000;
   }
   
-  /*-----------
-  login form
-  -------------*/
+  /*---------------------
+  ------login form-------
+  -----------------------*/
   
   #login-form {
     background-color: #ebebeb;
@@ -266,9 +266,9 @@ main section h2 {
     color: #EAC926;
   }
 
-/*-----------------------------------
-              FOOTER
--------------------------------------*/
+/*-----------------------------
+-------------FOOTER------------
+-------------------------------*/
 
 .footer-container {
   display: block;
@@ -301,7 +301,7 @@ text-align: center;
 }
 
 /*-----------------------------------
-              MEDIA QUERIES
+------------MEDIA QUERIES------------
 -------------------------------------*/
 
 
@@ -312,7 +312,7 @@ text-align: center;
     justify-content: space-around;
     align-items: center;
   }
-  .logo {
+  .top-header a {
     width: 50%;
   }
   .search {
@@ -341,7 +341,7 @@ text-align: center;
     display: flex;
     justify-content: space-between;
   }
-  .logo, .search{
+  .top-header a, .search{
     width: 30%;
     padding: 0 5px;
   }
