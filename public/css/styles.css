@@ -44,11 +44,15 @@ header h3 {
   font-weight: 400;
   text-align: center;
   padding: 10px;
+  width: 100%;
 }
 header nav ul {
   display: flex;
-  justify-content: space-around;
-  width: 40%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  width: 45%;
 }
 header nav ul li {
   list-style: none;
@@ -86,6 +90,7 @@ article {
   margin-bottom: 10px;
   box-sizing: content-box;
   transition: all 0.5s;
+  background: #ffffff;
 }
 main section article img{
   width: 100%;
@@ -327,12 +332,41 @@ text-align: center;
     justify-content: space-around;
     margin-bottom: 10px;
   }
-  
 }
-@media(min-width: 769px) {
+@media(min-width: 480px) {
+
   body {
     background-color: #ebebeb;
   }
+  .burger-menu {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header
+  .top-header a {
+    width: 29%;
+    justify-content: center;
+  }
+  .top-header .search {
+    width: 33%;
+    justify-content: center;
+  }
+  .top-header h3 {
+    width: 33%;
+    text-align: center;
+    font-size: 12px;
+  }
+  main section article {
+    width: 40%;
+  }
+}
+@media(min-width: 769px) {
+  
   .top-header, header nav, .footer-container{
     max-width: 1200px;
     margin: auto;
@@ -349,7 +383,7 @@ text-align: center;
     display: none;
   }
   main section article {
-    width: 22%;
+    width: 21%;
   }
   .description {
     display: none;
