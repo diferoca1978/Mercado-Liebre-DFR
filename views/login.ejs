@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs', {title: 'Login'} ) %>
+<body>
+  <%- include('partials/header.ejs') %>
+
+  <main id="login-form">
+
+    <form action="/" method="get" class="login">
+
+      <div>
+        <input type="text" name="usuario" placeholder="Usuario" required>
+      </div>
+      <div>
+        <input type="password" name="contrasenia" placeholder="Contrasenia" required>
+      </div>
+      <div>
+        <a href="/home"><button type="submit">Enviar</button></a>
+      </div>
+    </form>
+  </main>
+
+  <%- include('partials/footer.ejs') %>
+</body>
+</html>

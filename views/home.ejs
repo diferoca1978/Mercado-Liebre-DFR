@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs', {title: 'Mercado Liebre'} ) %>
+
+<body>
+  
+  <%- include('partials/header.ejs') %>
+
+  <main>
+    <section>
+      <h2>Basado en tu última visita</h2>
+      <div class="products">
+        <!--Through the method forEach we are going across the each element onto uor array, so we only need a one product as a model and, inside it we bring the values through tags ejs-->
+          <% seen.forEach(row => { %>
+            <article>
+              <img src="/img/<%= row.image %>" alt="<%= row.image %>">
+                <div class="info-article">
+                  <i class="fa-solid fa-truck"></i>
+                  <p class="price">$<%= row.price %></p>
+                  <h3 class="discount"><%= row.discount %>% off</h3>
+                  <h4 class="description"><%= row.description %></h4>
+                </div>   
+            </article>
+          <% }); %>
+      </div>
+   </section>
+
+   <section>
+
+    <h2>Ofertas</h2>
+    <div class="products">
+      <% insale.forEach(row => { %>
+      <article>
+        <img src="/img/<%= row.image %>" alt="<%= row.image %>">
+          <div class="info-article">
+            <i class="fa-solid fa-truck"></i>
+            <p class="price">$<%= row.price %></p>
+            <h3 class="discount"><%= row.discount %>% off</h3>
+            <h4 class="description"><%= row.description %></h4>
+          </div>   
+      </article>
+    <% }); %>
+    </div>
+  </section>
+
+  </main>
+
+  <%- include('partials/footer.ejs') %>
+
+</body>
+</html>
