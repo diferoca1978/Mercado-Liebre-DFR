@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nombre": "Diego Rodriguez",
+    "usuario": "diferoca",
+    "foto": "luckSkywalker.png",
+    "nacimiento": "10/30/1978",
+    "perfil": "vendedor",
+    "intereses": "on",
+    "contrasenia": "1234"
+  },
+  {
+    "id": 2,
+    "nombre": "Diego Ferney",
+    "usuario": "marcos",
+    "foto": "leia.png",
+    "nacimiento": "1978-10-31",
+    "perfil": "comprador",
+    "contrasenia": "12345"
+  },
+  {
+    "id": 3,
+    "nombre": "Diego Ferney Rodriguez Castro",
+    "usuario": "julio",
+    "foto": "luckSkywalker.png",
+    "nacimiento": "1988-10-29",
+    "perfil": "vendedor",
+    "intereses": [
+      "on",
+      "on"
+    ],
+    "contrasenia": "12345"
+  }
+]
